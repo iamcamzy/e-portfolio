@@ -58,3 +58,11 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
+const numType = new Typed('.multiple-texts', {
+    strings: ['Contact Me!', 'Contact Me!', 'Contact Me!'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});
