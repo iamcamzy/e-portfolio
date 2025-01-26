@@ -30,7 +30,7 @@ body {
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2rem;
+    padding: 15rem 8% 2rem;
 }
 
 .header {
@@ -38,7 +38,7 @@ section {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2rem 9%;
+    padding: 2rem 4%;
     background: var(--bg-color);
     display: flex;
     justify-content: space-between;
@@ -51,10 +51,10 @@ section {
 }
 
 .logo {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: var(--text-color);
     font-weight: 700;
-    cursor: default;
+    cursor: pointer;
 }
 
 .navbar a {
@@ -191,28 +191,36 @@ span {
 }
 
 
-@keyframes slide {
-    from {
-        transform: translateX(0)
-    }
-    to {transform: translateX(-100%);
-    }
-}
 .icons {
     overflow:hidden;
-    padding: 180px;
+    padding: 150px 0;
     white-space: nowrap;
+    -webikit-mask: linear-gradient(
+        90deg, 
+        transparent, white 20%, white 80%, transparent
+    );
+    mask: linear-gradient(
+        90deg, 
+        transparent, white 20%, white 80%, transparent
+    );
 }
 
 .icons-slide {
     display: inline-block;
-    animation: 5s slide infinite linear;
+    animation: 7.5s slide infinite linear;
+    width: max-content;
 }
 
 .icons-slide img {
-    height:150px;
-    margin:30px;
+    height:110px;
+    margin:50px;
 }
+
+@keyframes slide {
+    to {transform: translateX(calc(-100% - .5rem));
+    }
+}
+
 
 .projects {
     background: var(--snd-bg-color);
@@ -293,6 +301,86 @@ span {
 }
 
 
+.certificate {
+    background: var(--bg-color);
+}
+
+.certificate h2 {
+    margin-bottom: 4rem;
+}
+
+.certificate-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.certificate-container .certificate-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.certificate-box img {
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0.7;
+}
+
+.certificate-box:hover img {
+    transform: scale(1.1);
+}
+
+.certificate-box .certificate-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.certificate-layer h4{
+    font-size: 3rem;
+}
+
+.certificate-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+.certificate-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.certificate-layer a i {
+    font-size: 2rem;
+    color: var(--snd-bg-color);
+}
+
+
+
+.contact {
+    background: var(--snd-bg-color);
+}
+
 .contact h2 {
     margin-bottom: 3rem;
 }
@@ -310,13 +398,17 @@ span {
     flex-wrap: wrap;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {-webkit-appearance: none;}
+
+
 .contact form .input-box input,
 .contact form textarea {
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
     color: var(--text-color);
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -341,7 +433,7 @@ span {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--snd-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text {
@@ -389,9 +481,14 @@ span {
         padding-bottom: 7rem;
     }
 
-    .portfolio {
+    .projects {
         padding-bottom: 7rem;
     }
+
+    .certificate {
+        padding-bottom: 7rem;
+    }
+
 
     .contact {
         min-height: auto;
@@ -459,17 +556,29 @@ span {
         margin-bottom: 3rem;
     }
 
-    .portfolio h2 {
+    .projects h2 {
         margin-bottom: 3rem;
     }
 
-    .portfolio-container {
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .certificate h2 {
+        margin-bottom: 3rem;
+    }
+
+    .certificate-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 617px) {
-    .portfolio-container {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-container {
         grid-template-columns: 1fr;
     }
 
