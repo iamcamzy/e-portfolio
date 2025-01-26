@@ -44,13 +44,14 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form', 'certificate-box', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .skills-container, .projects-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 ScrollReveal().reveal('.icons', { origin: 'right'});
 ScrollReveal().reveal('.skills', { origin: 'top'});
 ScrollReveal().reveal('.projects', { origin: 'top'});
 ScrollReveal().reveal('.certificate', { origin: 'bottom'});
+ScrollReveal().reveal('.contact, .input-box', { origin: 'bottom'});
 
 // Typed JS
 const typed = new Typed('.multiple-text', {
