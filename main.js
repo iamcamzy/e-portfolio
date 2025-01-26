@@ -59,3 +59,11 @@ const typed = new Typed('.multiple-text', {
     backDelay: 1000,
     loop: true,
 });
+
+const types = new Typed('.multiple-texts', {
+    strings: ['Backend Developer'],
+    typeSpeed: 70,
+    backSpeed: 70,
+    backDelay: 1000,
+    loop: true,
+});
