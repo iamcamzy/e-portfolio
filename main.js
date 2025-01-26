@@ -30,9 +30,9 @@ window.onscroll = () => {
     let header = document.querySelector('header');
     header.classList.toggle('sticky', window.scrollY > 100);
 
-// Toggle icon navbar
-    menuIcon.classList.remove('fa-xmark');
-    navbar.classList.remove('active');
+// Remove icon navbar
+menuIcon.classList.remove('fa-xmark');
+navbar.classList.remove('active');
 };
 
 // ScrollReveal
