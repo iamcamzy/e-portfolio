@@ -53,7 +53,7 @@ ScrollReveal().reveal('.projects', { origin: 'top'});
 
 // Typed JS
 const typed = new Typed('.multiple-text', {
-    strings: ['Backend Developer', 'Backend Developer', 'Backend Developer'],
+    strings: ['Backend Developer'],
     typeSpeed: 70,
     backSpeed: 70,
     backDelay: 1000,
