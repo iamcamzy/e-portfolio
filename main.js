@@ -52,6 +52,8 @@ ScrollReveal().reveal('.skills', { origin: 'top'});
 ScrollReveal().reveal('.projects', { origin: 'top'});
 ScrollReveal().reveal('.certificate', { origin: 'bottom'});
 ScrollReveal().reveal('.contact, .input-box', { origin: 'bottom'});
+ScrollReveal().reveal('.certificate-box', { origin: 'bottom'});
+ScrollReveal().reveal('.certificate-container', { origin: 'bottom'});
 
 // Typed JS
 const typed = new Typed('.multiple-text', {
