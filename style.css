@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #191f36;
-    --snd-bg-color: #262B40;
+    --bg-color: #000000;
+    --snd-bg-color: #000000;
     --text-color: #fff;
-    --main-color: #59B2F4;
+    --main-color: #00ffee;
 }
 
 html {
@@ -43,7 +43,7 @@ section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 5;
 }
 
 .header.sticky {
@@ -52,10 +52,21 @@ section {
 
 .logo {
     font-size: 2.8rem;
-    color: var(--text-color);
+    color: rgb(16, 255, 243);
     font-weight: 700;
     cursor: pointer;
+    transition: 0.3s ease;
 }
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+.logo span {
+    text-shadow: 0 0 25px white;
+}
+
 
 .navbar a {
     font-size: 1.5rem;
@@ -90,8 +101,17 @@ section {
     margin-bottom: 2rem;
 }
 
+.home span {
+    text-shadow: 0 0 25px white;
+}
+
+
 span {
-    color: var(--main-color);
+    color: rgb(14, 207, 255);
+}
+
+strong {
+    color: rgb(0, 255, 98);
 }
 
 .home-content h1 {
@@ -164,8 +184,16 @@ span {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--snd-bg-color);
+    background: url(./img/173782.jpg);
+    background-size: 191rem;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+.about span {
+    text-shadow: 0 0 25px white;
+}
+
 
 .heading {
     text-align: center;
@@ -186,9 +214,25 @@ span {
     margin: 2rem 0 3rem;
 }
 
+
+.logo span {
+    text-shadow: 0 0 25px white;
+}
+
+
+.skills {
+    background: url(./img/271048.png);
+    background-position: right -25px;
+}
+
 .skills h2 {
     margin-bottom: 5rem;
 }
+
+.skills span {
+    text-shadow: 0 0 25px white;
+}
+
 
 
 .icons {
@@ -212,7 +256,7 @@ span {
 }
 
 .icons-slide img {
-    height:110px;
+    height:80px;
     margin:50px;
 }
 
@@ -225,6 +269,11 @@ span {
 .projects {
     background: var(--snd-bg-color);
 }
+
+.projects span {
+    text-shadow: 0 0 25px white;
+}
+
 
 .projects h2 {
     margin-bottom: 4rem;
@@ -305,6 +354,11 @@ span {
     background: var(--bg-color);
 }
 
+.certificate span {
+    text-shadow: 0 0 25px white;
+}
+
+
 .certificate h2 {
     margin-bottom: 4rem;
 }
@@ -378,8 +432,16 @@ span {
 
 
 .contact {
-    background: var(--snd-bg-color);
+    background: url(./img/2413654.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
+
+
+.contact span {
+    text-shadow: 0 0 25px white;
+}
+
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -409,8 +471,9 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     font-size: 1.6rem;
     color: var(--text-color);
     background: var(--bg-color);
-    border-radius: .8rem;
+    border-radius: 2rem;
     margin: .7rem 0;
+    border: var(--main-color);
 }
 
 .contact form .input-box input {
