@@ -51,6 +51,7 @@ ScrollReveal().reveal('.icons', { origin: 'right'});
 ScrollReveal().reveal('.skills', { origin: 'top'});
 ScrollReveal().reveal('.projects', { origin: 'top'});
 ScrollReveal().reveal('.certificate', { origin: 'bottom'});
+ScrollReveal().reveal('.contact', { origin: 'bottom'});
 
 // Typed JS
 const typed = new Typed('.multiple-text', {
