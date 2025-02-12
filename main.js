@@ -62,10 +62,10 @@ const typed = new Typed('.multiple-text', {
     loop: true,
 });
 
-const type1 = new Typed('.multiple-texts', {
-    strings: ['John Richmund Galorio'],
-    typeSpeed: 70,
-    backSpeed: 70,
-    backDelay: 1000,
-    loop: true,
-});
+// const type1 = new Typed('.multiple-texts', {
+//     strings: ['John Richmund Galorio'],
+//     typeSpeed: 70,
+//     backSpeed: 70,
+//     backDelay: 1000,
+//     loop: true,
+// });
