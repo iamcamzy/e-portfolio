@@ -345,6 +345,7 @@ strong {
 .skills {
     background: url(./img/271048.png);
     background-position: right -25px;
+    background: no-repeat;
 }
 
 .skills h2 {
