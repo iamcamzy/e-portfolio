@@ -18,6 +18,14 @@
     --main-color: #00ffee;
 }
 
+span {
+    color: rgb(14, 207, 255);
+}
+
+strong {
+    color: rgb(231, 38, 4);
+}
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
@@ -228,16 +236,6 @@ section {
 		opacity: 0;
 		bottom: 100vh;
 	}
-}
-
-
-
-span {
-    color: rgb(14, 207, 255);
-}
-
-strong {
-    color: rgb(0, 255, 98);
 }
 
 .home-content h1 {
@@ -792,26 +790,6 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    .contact form .input-box input {
-        width: 100%;
-    }
-}
-
-@media (max-width: 350px) {
-    html {
-        font-size: 30%;
-    }
-
-    .contact form .input-box input {
-        width: 100%;
-    }
-}
-
-@media (max-width: 250px) {
-    html {
-        font-size: 30%;
     }
 
     .contact form .input-box input {
