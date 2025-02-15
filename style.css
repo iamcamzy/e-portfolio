@@ -47,6 +47,10 @@ section {
     z-index: 5;
 }
 
+.nav-up {
+    top: -40px;
+}
+
 .header.sticky {
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
@@ -307,7 +311,7 @@ strong {
     align-items: center;
     gap: 2rem;
     background: url(./img/173782.jpg);
-    background-size: 191rem;
+    background-size: 192rem;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -648,19 +652,21 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     color: var(--snd-bg-color);
 }
 
-
-
-
+/* For responsiveness */
 
 @media (max-width: 1200px) {
     html {
-        font-size: 55%;
+        font-size: 75%;
     }
 }
 
 @media (max-width: 991px) {
     .header {
         padding: 2rem 3%;
+    }
+
+    .about {
+        padding: 7rem;
     }
     
     section {
@@ -689,7 +695,7 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     #menu-icon {
         display: block;
     }
@@ -786,6 +792,26 @@ input::-webkit-inner-spin-button {-webkit-appearance: none;}
 @media (max-width: 450px) {
     html {
         font-size: 50%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 30%;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 250px) {
+    html {
+        font-size: 30%;
     }
 
     .contact form .input-box input {
